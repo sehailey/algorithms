@@ -1,0 +1,8 @@
+# Arrays
+* Stacks & Queues
+* Linked Lists
+- Single Linked Lists
+- Doubly Linked Lists 
+* Hash Tables
+* Trees & Heaps
+* Graphs
