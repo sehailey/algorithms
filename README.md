@@ -9,7 +9,6 @@ I'll be focusing on these areas:
     * Arrays
     * Stacks & Queues
     * Linked Lists
-    * Linked Lists
     * Hash Tables
     * Trees & Heaps
     * Graphs

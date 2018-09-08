@@ -12,7 +12,17 @@ class DoubleLinkedList {
     this.tail = null
   }
 
-  addToHead(value) {}
+  addToHead(value) {
+    const newNode = new Node(value)
+    const oldHead = this.head
+    this.head = newNode
+    if (oldHead) {
+      newNode.next = oldHead
+      oldHead.previous = newNode
+    } else {
+      this.tail = newNode
+    }
+  }
   addToTail(value) {
     const newNode = new Node(value)
     const oldTail = this.tail
@@ -24,7 +34,11 @@ class DoubleLinkedList {
       this.head = newNode
     }
   }
-  removeHead() {}
+  removeHead() {
+      if(this.head) {
+          const 
+      }
+  }
   removeTail() {}
   search(value) {}
 }

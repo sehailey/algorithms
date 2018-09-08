@@ -36,7 +36,11 @@ describe("DoubleLinkedList", () => {
     assert.instanceOf(doubleLinkedList.tail, Node)
   })
 
-  it("returns the head on removeHead")
+  it("returns the head on removeHead", () => {
+    doubleLinkedList.addToHead("first")
+    const oldHead = doubleLinkedList.removeHead()
+    assert.equal(oldHead, "first")
+  })
   it("returns the tail on removeTail")
   it("the head node always has prevous = null")
   it("the tail node always has next = null")
