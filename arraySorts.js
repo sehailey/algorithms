@@ -101,3 +101,42 @@ const heapSort = input => {
     heapify(input, 0)
   }
 }
+
+/*************************************
+    BINARY SEARCH
+ *************************************/
+function binarySearch(array, target) {
+  let left = 0
+  let right = array.length - 1
+
+  while (left <= right) {
+    const mid = left + Math.floor((right - left) / 2)
+    if (array[mid] === target) return mid
+    if (array[mid] < target) left = mid + 1
+    else right = mid - 1
+  }
+  return -1
+}
+
+const test = [1, 3, 5, 6, 8, 9]
+console.log(binarySearch(test, 9))
+
+/*************************************
+    BUBBLE SORT
+ *************************************/
+function bubbleSort(array) {
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length - 1; j++) {
+      if (array[j] > array[j + 1]) {
+        var tmp = array[j]
+        array[j] = array[j + 1]
+        array[j + 1] = tmp
+      }
+    }
+  }
+  return array
+}
+
+/*************************************
+    BINARY SEARCH
+ *************************************/
