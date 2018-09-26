@@ -36,19 +36,22 @@ class DoubleLinkedList {
     this.tail = newNode
   }
   removeHead() {
-    if (this.head) {
-      const newHead = this.head.next
-      newHead.previous = null
-      this.head = newHead
-    }
+    if (!this.head) return null
+    let value = this.head.value
+    this.head = this.head.next
+    if (this.head) this.head.previous = null
+    else this.tail = null
+
+    return value
   }
 
   removeTail() {
-    if (this.tail) {
-      const newTail = this.tail.previous
-      newTail.next = null
-      this.tail = newTail
-    }
+    if (!this.tail) return null
+    let value = this.tail.value
+    this.tail = this.tail.previous
+    if (this.tail) this.tail.next = null
+    else this.head = null
+    return value
   }
   search(value) {
     let node = this.head
