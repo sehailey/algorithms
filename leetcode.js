@@ -23,39 +23,39 @@ var numJewelsInStones = function(J, S) {
 
 const uniqueMorseRepresentations = function(words) {
   const morse = [
-    ".-",
-    "-...",
-    "-.-.",
-    "-..",
-    ".",
-    "..-.",
-    "--.",
-    "....",
-    "..",
-    ".---",
-    "-.-",
-    ".-..",
-    "--",
-    "-.",
-    "---",
-    ".--.",
-    "--.-",
-    ".-.",
-    "...",
-    "-",
-    "..-",
-    "...-",
-    ".--",
-    "-..-",
-    "-.--",
-    "--.."
+    '.-',
+    '-...',
+    '-.-.',
+    '-..',
+    '.',
+    '..-.',
+    '--.',
+    '....',
+    '..',
+    '.---',
+    '-.-',
+    '.-..',
+    '--',
+    '-.',
+    '---',
+    '.--.',
+    '--.-',
+    '.-.',
+    '...',
+    '-',
+    '..-',
+    '...-',
+    '.--',
+    '-..-',
+    '-.--',
+    '--..'
   ]
-  const alph = "abcdefghijklmnopqrstuvwxyz".split("")
+  const alph = 'abcdefghijklmnopqrstuvwxyz'.split('')
   const translation = words.map(word => {
     return word
-      .split("")
+      .split('')
       .map(char => morse[alph.indexOf(char)])
-      .join("")
+      .join('')
   })
 
   const transformations = []
