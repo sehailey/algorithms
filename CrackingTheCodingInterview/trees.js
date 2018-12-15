@@ -26,7 +26,7 @@ class BST {
     this.root = null
   }
 
-  insertNode(val) {
+  traverse(val) {
     const node = new Node(val)
     if (this.root === null) this.root = node
     else {
